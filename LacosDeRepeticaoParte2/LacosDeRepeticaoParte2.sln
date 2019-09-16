@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IniciandoForeach", "Inician
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoDeCar", "InfoDeCar\InfoDeCar.csproj", "{D026D103-730B-4688-9FB5-4244A408C634}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApresentarApenasOsDeMaior", "ApresentarApenasOsDeMaior\ApresentarApenasOsDeMaior.csproj", "{07176FF1-2642-47B9-A955-2C682327C927}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AprendendoList", "AprendendoLisy\AprendendoList.csproj", "{D1946D2A-0D2E-42AD-BB9B-ACB08721E43A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{D026D103-730B-4688-9FB5-4244A408C634}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D026D103-730B-4688-9FB5-4244A408C634}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D026D103-730B-4688-9FB5-4244A408C634}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07176FF1-2642-47B9-A955-2C682327C927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07176FF1-2642-47B9-A955-2C682327C927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07176FF1-2642-47B9-A955-2C682327C927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07176FF1-2642-47B9-A955-2C682327C927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1946D2A-0D2E-42AD-BB9B-ACB08721E43A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1946D2A-0D2E-42AD-BB9B-ACB08721E43A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1946D2A-0D2E-42AD-BB9B-ACB08721E43A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1946D2A-0D2E-42AD-BB9B-ACB08721E43A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
