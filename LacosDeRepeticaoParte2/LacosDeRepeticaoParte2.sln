@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IniciandoForeach", "IniciandoForeach\IniciandoForeach.csproj", "{273C7F8C-8FD3-4F70-A547-FB523011B025}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoDeCar", "InfoDeCar\InfoDeCar.csproj", "{D026D103-730B-4688-9FB5-4244A408C634}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{273C7F8C-8FD3-4F70-A547-FB523011B025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{273C7F8C-8FD3-4F70-A547-FB523011B025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{273C7F8C-8FD3-4F70-A547-FB523011B025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{273C7F8C-8FD3-4F70-A547-FB523011B025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D026D103-730B-4688-9FB5-4244A408C634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D026D103-730B-4688-9FB5-4244A408C634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D026D103-730B-4688-9FB5-4244A408C634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D026D103-730B-4688-9FB5-4244A408C634}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9EAED80F-3EFF-4734-80F6-1121E85D1EEC}
+	EndGlobalSection
+EndGlobal
