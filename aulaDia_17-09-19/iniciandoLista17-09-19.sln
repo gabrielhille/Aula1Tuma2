@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForeachNaListaConverterMoed
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodosPublicos", "MetodosPublicos\MetodosPublicos.csproj", "{277636C9-EF3B-4BFB-9635-B5C15C426E8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConversorMonetartio", "ConversorMonetartio\ConversorMonetartio.csproj", "{6FDCA8E7-917A-43D1-9E27-43E13F157969}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "conversorSIS", "conversorSIS\conversorSIS.csproj", "{60C8A57A-3D2B-4331-9C7F-C9B2AC17F2DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{277636C9-EF3B-4BFB-9635-B5C15C426E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{277636C9-EF3B-4BFB-9635-B5C15C426E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{277636C9-EF3B-4BFB-9635-B5C15C426E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FDCA8E7-917A-43D1-9E27-43E13F157969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FDCA8E7-917A-43D1-9E27-43E13F157969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FDCA8E7-917A-43D1-9E27-43E13F157969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FDCA8E7-917A-43D1-9E27-43E13F157969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60C8A57A-3D2B-4331-9C7F-C9B2AC17F2DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C8A57A-3D2B-4331-9C7F-C9B2AC17F2DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C8A57A-3D2B-4331-9C7F-C9B2AC17F2DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C8A57A-3D2B-4331-9C7F-C9B2AC17F2DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

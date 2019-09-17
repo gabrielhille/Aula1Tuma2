@@ -7,11 +7,18 @@ using System.Threading.Tasks;
 
 namespace MetodosPublicos
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("---Sistema conversor de moedas cabuloso---");
+
+            ConversorMonetarioSis();
+
+        }
+
+        public static void ConversorMonetarioSis()
+        {
+            Console.WriteLine("Sistema de conversão de moedas.");
             Console.WriteLine("Informe um valor a ser convertido: ");
 
             var valorASerConvertido = double.Parse(Console.ReadLine());
@@ -19,7 +26,7 @@ namespace MetodosPublicos
             Console.WriteLine("Informe uma moeda para conversão");
             Console.WriteLine("DOLAR,EURO,YEN, BTC");
 
-            var moedaAlvoParaConverter = Console.ReadLine();
+            var moedaAlvoParaConverter = Console.ReadLine().ToUpper();
 
             ConvertMoeda(valorASerConvertido, moedaAlvoParaConverter);
 
@@ -52,6 +59,7 @@ namespace MetodosPublicos
                     break;
 
                 default:
+                    Console.WriteLine("Nenhuma das alternativas selecionadas");
                     break;
             }
 
