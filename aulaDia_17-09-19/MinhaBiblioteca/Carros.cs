@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace marcasDeCarro
+namespace MinhaBiblioteca
 {
-    class Program
+    public class Carros
     {
-        static void Main(string[] args)
+        public static void ListaDeCarros()
         {
+
             var listaCar = new List<string>();
 
             listaCar.Add("FIAT");
@@ -25,7 +26,10 @@ namespace marcasDeCarro
 
             listaCar.ForEach(i => Console.WriteLine($"As marcas listadas são: {i}"));
 
-            Console.ReadKey();
+            Console.WriteLine("-------------------------------");
         }
+
+
+
     }
 }

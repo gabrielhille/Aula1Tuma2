@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4E1B8AF3-721F-4AAD-B746-77EC234079CC}</ProjectGuid>
+    <ProjectGuid>{D74FD650-F4A7-496A-A5FD-97CD96DA4990}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>calculoDeArea</RootNamespace>
-    <AssemblyName>calculoDeArea</AssemblyName>
+    <RootNamespace>AcessandoInformacao</RootNamespace>
+    <AssemblyName>AcessandoInformacao</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalcArea.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MinhaBiblioteca\MinhaBiblioteca.csproj">
+      <Project>{3be97ad4-333b-4b9c-aa5a-bb9da3fd250a}</Project>
+      <Name>MinhaBiblioteca</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

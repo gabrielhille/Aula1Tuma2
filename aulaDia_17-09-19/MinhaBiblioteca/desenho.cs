@@ -5,18 +5,11 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace desenho
+namespace MinhaBiblioteca
 {
-    public class Program
+    public class desenho
     {
-        static void Main(string[] args)
-        {
-           
-          
-
-        }
-
-        public static void MinhaAnimacao()
+        public void MinhaAnimacao()
         {
             Console.WriteLine("          0");
             Console.WriteLine("         OOO");
@@ -166,7 +159,7 @@ namespace desenho
             Thread.Sleep(200);
 
         }
-
-
     }
 }
+
+
