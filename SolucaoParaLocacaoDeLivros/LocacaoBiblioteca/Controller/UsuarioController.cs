@@ -24,9 +24,26 @@ namespace LocacaoBiblioteca.Controller
         {
             if (usuarios.Login == "Admin" && usuarios.Senha == "Admin")
                 return true;
+            
             else
                 return false;
 
+        }
+
+        public  List<Usuario> Usuarios { get ; set; }
+        public UsuarioController()
+        {
+            Usuarios = new List<Usuario>();
+            Usuarios.Add(new Usuario()
+            {
+                Login = "Gabriel",
+                Senha = "Gabriel"
+            });
+            Usuarios.Add(new Usuario()
+            {
+                Login = "Admin",
+                Senha = "Admin"
+            });
         }
     }
 }

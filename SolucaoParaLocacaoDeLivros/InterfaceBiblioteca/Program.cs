@@ -11,6 +11,7 @@ namespace InterfaceBiblioteca
     class Program
     {
         static LivroController livros = new LivroController();
+        static UsuarioController usuarios = new UsuarioController();
         static void Main(string[] args)
         {
             Console.WriteLine("SISTEMA DE LOCAÇÃO DE LIVRO 1.0");
@@ -47,6 +48,10 @@ namespace InterfaceBiblioteca
 
                 switch (menuEscolhido)
                 {
+                    case 1:
+                        MostrarUsuario();
+                        break;
+
                     case 2:
                         MostrarLivro();
                         break;
@@ -70,7 +75,7 @@ namespace InterfaceBiblioteca
         /// <returns>Retorna verdadeiro quando o login e senha informados estiverem corretos</returns>
         private static bool RealizarLoginSistema()
         {
-            Console.WriteLine("Informe seu ligin e senha para acessar o sistema:");
+            Console.WriteLine("Informe seu login e senha para acessar o sistema:");
 
             Console.WriteLine("login:");
             var loginDoUsuario = Console.ReadLine();
@@ -95,14 +100,13 @@ namespace InterfaceBiblioteca
             Console.ReadKey();
 
         }
+        private static void MostrarUsuario()
+        {
+            usuarios.Usuarios.ForEach(i =>
+           Console.WriteLine($"nome do usuario {i.Login} "));
+            Console.ReadKey();
 
-
-
-
-
-
-
+        }
     }       
-
-    
+   
 }

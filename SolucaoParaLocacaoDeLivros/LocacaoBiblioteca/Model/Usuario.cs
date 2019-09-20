@@ -16,5 +16,10 @@ namespace LocacaoBiblioteca.Model
         public int UsuarioAlteracao { get; set; }
         public DateTime DataCriacao { get; set; }
         public DateTime DataAlteracao { get; set; }
+
+        internal static void Add(Usuario usuario)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
