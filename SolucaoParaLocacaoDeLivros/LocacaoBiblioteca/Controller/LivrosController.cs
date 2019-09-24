@@ -12,34 +12,16 @@ namespace LocacaoBiblioteca.Controller
     /// </summary>
     public class LivrosController
     {
-        private int IdContador = 1;
+        private LocacaoContext contextDB = new LocacaoContext();
+        
         /// <summary>
         /// Metodo construtor que prepara o terreo para já iniciar com livros pré cadastrados
         /// </summary>
         public LivrosController()
         {
-            //criamos uma lista de livros em memoria
-            ListaDeLivros = new List<Livro>();
-
-            //Adicionamos os livros 
-            ListaDeLivros.Add(new Livro()
-            {
-                Id = IdContador++,
-                //Informo apenas o nome do livro para adicionar
-                Nome = "Meu Primeiro Livro",
-                Ativo = true
-
-            }) ;
-
-            ListaDeLivros.Add(new Livro()
-            {
-                Id = IdContador++,
-                Nome = "Meu Segundo Livro",
-                Ativo = true
-            });
+           
         }
-        //Aqui crio uma propriedade para acessar o a lista de livros disponiveis no sistema
-        private List<Livro> ListaDeLivros { get; set; }
+        
         /// <summary>
         /// Metodo que adiciona o livro em nossa lista já "instanciada" criada dentro do 
         /// construtor
@@ -48,9 +30,9 @@ namespace LocacaoBiblioteca.Controller
         public void AdicionarLivro(Livro parametroLivro)
         {
             //Adicionamos o livro em nossa lista.
-            parametroLivro.Id = IdContador++;
+            parametroLivro.Id = contextDB.IdcontadorLivros++;
             parametroLivro.Ativo = true;
-            ListaDeLivros.Add(parametroLivro);
+            contextDB.ListaDeLivros.Add(parametroLivro);
 
         }
         /// <summary>
@@ -59,13 +41,13 @@ namespace LocacaoBiblioteca.Controller
         /// <returns>Lista de livros</returns>
         public List<Livro> RetornaListaDeLivros()
         {
-            return ListaDeLivros.FindAll(x=>x.Ativo==true);
+            return contextDB.ListaDeLivros.FindAll(x=>x.Ativo==true);
         }
         public void RemoverLivrosPeloId(int identificadoID)
         {
             //Aqui usamos o metodo FirstOrDefaul para localizar nosso usuario dentro da lista
             //com isso conseguimos acessar as propriedades dele e dasativar o registro
-            ListaDeLivros.FirstOrDefault(x => x.Id == identificadoID).Ativo = false;
+            contextDB.ListaDeLivros.FirstOrDefault(x => x.Id == identificadoID).Ativo = false;
         }
 
     }
