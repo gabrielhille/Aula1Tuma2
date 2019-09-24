@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7A1EC67E-D39B-4C3D-82BB-E9058176C552}</ProjectGuid>
+    <ProjectGuid>{E5600227-E489-4768-81DA-4C5B368BB543}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LocacaoBiblioteca</RootNamespace>
@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\LivroController.cs" />
+    <Compile Include="Controller\LivrosController.cs" />
     <Compile Include="Controller\UsuarioController.cs" />
     <Compile Include="Model\Livro.cs" />
     <Compile Include="Model\Usuario.cs" />
