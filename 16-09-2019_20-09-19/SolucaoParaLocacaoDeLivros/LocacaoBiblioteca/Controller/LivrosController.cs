@@ -10,7 +10,7 @@ namespace LocacaoBiblioteca.Controller
     /// <summary>
     /// Classe que controla as informações dos nossos livros
     /// </summary>
-    public class LivrosController
+    public class LivrosController :
     {
         private LocacaoContext contextDB = new LocacaoContext();
         
@@ -30,9 +30,11 @@ namespace LocacaoBiblioteca.Controller
         public void AdicionarLivro(Livro parametroLivro)
         {
             //Adicionamos o livro em nossa lista.
-            parametroLivro.Id = contextDB.IdcontadorLivros++;
-            parametroLivro.Ativo = true;
-            contextDB.ListaDeLivros.Add(parametroLivro);
+
+            contextDB.Livros.Add(parametroLivro);
+            contextDB.SaveChanges();
+
+           
 
         }
         /// <summary>
