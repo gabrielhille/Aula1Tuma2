@@ -10,7 +10,7 @@ namespace LocacaoBiblioteca.Controller
     /// <summary>
     /// Classe que controla as informações dos nossos livros
     /// </summary>
-    public class LivrosController :
+    public class LivrosController 
     {
         private LocacaoContext contextDB = new LocacaoContext();
         
@@ -27,7 +27,7 @@ namespace LocacaoBiblioteca.Controller
         /// construtor
         /// </summary>
         /// <param name="parametroLivro">Informações do livro que vamos adicionar</param>
-        public void AdicionarLivro(Livro parametroLivro)
+        public void AdicionarLivro(LivrosNew parametroLivro)
         {
             //Adicionamos o livro em nossa lista.
 
@@ -41,15 +41,15 @@ namespace LocacaoBiblioteca.Controller
         /// Metodo que retorna a lista de livros
         /// </summary>
         /// <returns>Lista de livros</returns>
-        public List<Livro> RetornaListaDeLivros()
+        public IQueryable<LivrosNew> RetornaListaDeLivros()
         {
-            return contextDB.ListaDeLivros.FindAll(x=>x.Ativo==true);
+            return contextDB.Livros.Where(x=>x.Ativo==true);
         }
         public void RemoverLivrosPeloId(int identificadoID)
         {
             //Aqui usamos o metodo FirstOrDefaul para localizar nosso usuario dentro da lista
             //com isso conseguimos acessar as propriedades dele e dasativar o registro
-            contextDB.ListaDeLivros.FirstOrDefault(x => x.Id == identificadoID).Ativo = false;
+            contextDB.Livros.FirstOrDefault(x => x.Id == identificadoID).Ativo = false;
         }
 
     }

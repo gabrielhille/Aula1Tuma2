@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LocacaoBiblioteca.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LocacaoBiblioteca.Model
 {
-     public class LivrosNew :UserNews
+     public class LivrosNew : ControleDeUsuarios
     {
         [Key]
         public int Id { get; set; }
@@ -15,6 +16,6 @@ namespace LocacaoBiblioteca.Model
         [MaxLength(30)]
         [Required]
         public string Nome { get; set; }
-        public bool Ativo { get; set; } 
+        
     }
 }
