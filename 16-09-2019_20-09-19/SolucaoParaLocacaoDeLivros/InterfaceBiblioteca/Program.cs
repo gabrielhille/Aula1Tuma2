@@ -42,13 +42,14 @@ namespace InterfaceBiblioteca
 
                 //Mostra as opções de menu dentro do nosso sistema.
                 Console.WriteLine("Menu sistema");
-                //Console.WriteLine("1 - Listar Usuários");
+                Console.WriteLine("1 - Listar Usuários");
                 Console.WriteLine("2 - Listar Livros");
                 Console.WriteLine("3 - Cadastrar Livro");
-               // Console.WriteLine("4 - Cadastra Usuário");
-              //  Console.WriteLine("5 - Remover Usuário");
-              //  Console.WriteLine("6 - Trocar Usuário");
+                Console.WriteLine("4 - Cadastra Usuário");
+                Console.WriteLine("5 - Remover Usuário");
+                Console.WriteLine("6 - Trocar Usuário");
                 Console.WriteLine("7 - Remover livro do sistema");
+                Console.WriteLine("7 - Atualizar livro do sistema");
                 Console.WriteLine("0 - Sair");
 
                 //Aqui vamos pegar numero digitado
@@ -74,14 +75,18 @@ namespace InterfaceBiblioteca
                         break;
                     case 5:
                         //Metodo  que inicializa a tela para remover um usuário
-                       // RemoverUsuarioPeloID();
+                     //   RemoverUsuarioPeloID();
                         break;
                     case 6:
                        // while (!RealizaLoginSistema())
-                         //   Console.WriteLine("Login e senha inválidos");
+                          //  Console.WriteLine("Login e senha inválidos");
                         break;
                     case 7:
                         RemoverLivrosPeloId();
+
+                        break;
+                    case 8:
+                        AlteraLivroPeloId();
 
                         break;
                     default:
@@ -106,6 +111,38 @@ namespace InterfaceBiblioteca
         //    Console.WriteLine("Usuário desativado com sucesso");
         //    Console.ReadKey();
         //}
+        public static void AlteraLivroPeloId()
+        {
+            Console.WriteLine("Alterar um livro pelo id no sistema");
+            MostrarLivro();
+            Console.WriteLine("Informe o ID do livro para alterar do sistema:");
+            var livroId = int.Parse(Console.ReadLine());
+
+            var livro = livrosController.RetornaListaDeLivros().FirstOrDefault(x => x.Id == livroId);
+
+            if (livro != null)
+            {
+                Console.WriteLine("Informe novo nome para o livro");
+                var novoNome = Console.ReadLine();
+
+                livro.Nome = novoNome;
+
+                var resultado = livrosController.AtualizarLivro(livro);
+
+                
+
+                if (resultado)
+                {
+                    Console.WriteLine("Livro atualizado com sucesso");
+                }
+                else
+                {
+                    Console.WriteLine("Errrooouuuu");
+
+                }
+            }
+
+        }
         private static void RemoverLivrosPeloId()
         {
             Console.WriteLine("Remover um livro pelo id no sistema");
@@ -187,6 +224,8 @@ namespace InterfaceBiblioteca
 
             Console.ReadKey();
         }
+
+     
 
         /// <summary>
         /// Metodo que realiza os procedimento complestos de login dentro do 

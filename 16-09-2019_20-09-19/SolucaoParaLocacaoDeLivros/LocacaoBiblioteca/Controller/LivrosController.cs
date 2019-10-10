@@ -50,6 +50,21 @@ namespace LocacaoBiblioteca.Controller
             //Aqui usamos o metodo FirstOrDefaul para localizar nosso usuario dentro da lista
             //com isso conseguimos acessar as propriedades dele e dasativar o registro
             contextDB.Livros.FirstOrDefault(x => x.Id == identificadoID).Ativo = false;
+            contextDB.SaveChanges();
+        }
+        public bool AtualizarLivro(LivrosNew item)
+        {
+            var findLivro = contextDB.Livros.FirstOrDefault(x => x.Id == item.Id);
+
+            if (findLivro == null)
+                return false;
+            else
+            {
+                item.DataAlteracao = DateTime.Now;
+            }
+
+            contextDB.SaveChanges();
+            return true;
         }
 
     }
