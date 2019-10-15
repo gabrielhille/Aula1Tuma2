@@ -4,48 +4,121 @@
 
 
     <style>
+         
+         body{
+           
+            background-size:cover;
+            
+            background-image:url(https://outboundmarketing.com.br/wp-content/uploads/2016/07/abrir-cerveja-com-um-isqueiro.gif);
+            }
 
+         #admin{
+            text-align: center;
+            position: absolute;  
+            width: 10cm;
+            height: 6cm;
+            box-shadow: 1px 1px 12px #000;
+            margin-top: 12%;
+            margin-left: 38%;
+            background-color:rgba(209, 216, 234, 0.64);
+         }
 
-        #telaCadastro {
+         #Nome{
+            text-align: center;
+            position: absolute;            
+            margin-top: 16%;
+            margin-left: 40%;
+           
+         }
+         #Nacionalidade{
+              text-align: center;
+            position: absolute;            
+            margin-top: 17%;
+            margin-left: 40%;
+         }
+         #CPF{
+            text-align: center;
+            position: absolute;            
+            margin-top: 18%;
+            margin-left: 40%;
+         }
+         #botao{
+            text-align: center;
+            position: absolute;            
+            margin-top: 21%;
+            margin-left: 48%;
+         }
+         #mainselection{
+            text-align: center;
+            position: absolute;            
+            margin-top: 13%;
+            margin-left:51.8%;
 
-
-        }
+         }
+        
     </style>
 
 </head>
 
 <body>
-    <div id="telaDeLogin">
+
+    <div id="admin">
         <h2 style="margin: 10px">
             Tela de cadastro:
         </h2>
         <br>
     </div>
-    <input type="text"
-           placeholder="Nome "
-           id=" admin"
-           style="margin: 8px" />
+
+    <div id="Nome">
+        <input type="text"
+               placeholder="Nome "
+               style="margin: 8px"
+               margin-top: 12%;
+               margin-left: 38%; />
+    </div>
+
     <br>
-    <input type="text"
-           placeholder="Nacionalidade"
-           id=" admin"
-           style="margin: 8px"/>
-    <input type="number"
-           placeholder="Idade"
-           id=" admin" />
-    <br>
-    <input type="text"
-           placeholder="CPF"
-           id=" admin" 
-           style="margin: 8px"
-           maxlength="14"
-           OnKeyPress= "formatar('###.###.###-##', this)"
-           />
-    <input type="date"
-           placeholder="Data de nascimento"
-           id=" admin" />
+
+    <div id="Nacionalidade">
+        <input type="text"
+               placeholder="Nacionalidade"
+               style="margin: 8px" />
+
+        <input type="number"
+               placeholder="Idade"
+               id=" admin"
+               min="1" max="130" />
 
 
+
+    </div>
+
+
+    <br>
+
+    <div id="CPF">
+        <input type="text"
+               placeholder="CPF"
+               style="margin: 8px"
+               maxlength="14"
+               OnKeyPress="formatar('###.###.###-##', this)" />
+        <input type="date"
+               placeholder="Data de nascimento"
+               id=" admin" />
+    </div>
+
+    <br>
+
+    <div id="botao">
+        <input type="button" name="btnmostrar" id="btnmostrar" value="Cadastrar" />
+
+    </div>
+    <div id="mainselection">
+        <select name="sexo" class="dropdown" id="sexo">
+           <option value="Null">Sexo</option>/option>
+            <option value="MASCULINO">Masculino</option>
+            <option value="FEMININO">Feminino</option>
+    </div>
 
 
 
