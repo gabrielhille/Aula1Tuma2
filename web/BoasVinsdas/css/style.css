@@ -1,0 +1,16 @@
+
+.body-custom {
+    
+    height: 100vh;
+    background-image: url('https://http2.mlstatic.com/painel-para-festa-200-x-100-paisagem-floresta-3d-p03-D_NQ_NP_673853-MLB26092215662_092017-F.jpg');
+    background-size: cover;
+}
+
+.gif-custom {
+    max-width: 10px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+   
+    background-image: url('https://media.giphy.com/media/UfROqYmcLU4rS/giphy.gif');
+}
