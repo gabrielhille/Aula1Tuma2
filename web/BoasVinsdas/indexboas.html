@@ -3,56 +3,51 @@
     <title>Boas Vindas</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
-
 </head>
-
-<body class="body-custom"
-      >
-
+<body class="body-custom">
     <div class="gif-custom">
         </div>
-        
-    
-
         <div class=" container-fluid">
             <div class=" row justify-content-md-center">
-                <div class="col-6 time-now">
+                <div class="col-3 time-now">
                     <span name=""></span>
                     <br>
+                    <br>
+                    <br>
+                    <br>
+
                     <div class="col-md-12 ">
                         <input type="text" class="w-100 form-control" name="nome" placeholder="Nome completo">
+
                     </div>
                     <br>
                     <div class="col-md-12">
-
-                        <input type="button" class="w-100 btn btn-success" name="Pressione o botão" value="Press">
-
+                        <input type="button" class="w-100 btn btn-secondary" name="Pressione o botão" value="Press">
                     </div>
                 </div>
             </div>
         </div>
-
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script>
+        <script >
             $('input[type="button"]').click(
                 function () {
                     var nome = $('input[name="nome"]').val();
                     alert("Olá " + nome + ", seja bem vindo(a)");
-                    if (nome == "Felipe") {
+                    if (nome == "Felipe Git") {
                         window.location = "https://github.com/darkeght/Aula1Tuma2";
                     }
-                    if (nome == "Gabriel") {
-                        window.location = "https://github.com/gabrielhille/Aula1Tuma2";
+                    if (nome == "Gabriel Git") {
+                        window.location = "https://github.com/gabrielhille/Aula1Tuma2";                        
+                    }  
+                    if (nome == "Gabriel Email") {
+                        window.location = "https://outlook.office365.com/mail/inbox";
                     }
-                    
-
-               
+                    if (nome == "Gabriel Mundo") {
+                        window.location = "https://www.mundohbsis.com.br/";
+                    }
                 });
-
         </script>
-
-
     </body>
 </html>
