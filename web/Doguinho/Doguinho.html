@@ -5,34 +5,36 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body class="body-custom">
-    <div class="gif-custom">
-    </div>
+    
     <div class=" container-fluid">
         <div class=" row justify-content-md-center">
             <div class="col-3 time-now">
+                
+                </div>>   
+            
+            <div class="col-3 time-now">
                 <span name=""></span>
+                
                 <br>
                 <br>
                 <br>
                 <br>
-
+                <br>
+                <br>
+                <br>
+                
+                 
                 <div class="col-md-12 ">
                     <input type="text" class="w-100 form-control" name="nome" placeholder="Nome "><br>
                     <input type="text" class="w-100 form-control" name="idade" placeholder="Idade"><br>
-                    <input type="text" class="w-100 form-control" name="raça" placeholder="Raça"><br>
-                    <input type="text" class="w-100 form-control" name="coloração" placeholder="Coloração"><br>
+                    <input type="text" class="w-100 form-control" name="raca" placeholder="Raça"><br>
+                    <input type="text" class="w-100 form-control" name="coloracao" placeholder="Coloração"><br>
 
                 </div>
                 <br>
-                <div class="col-md-12">
-                    <input type="button" class="w-50 btn btn-secondary" name="Salvar" value="Salvar">
-                    
-                </div>
-                <div class="w-100">
-                    
-                </div>
-                <div class="col-12"><br>
-                    <input type="button" class="w-50 btn btn-info" name="Mostrar" value="Mostrar">
+                <div class=" col-md-12">
+                    <input class="btn btn-primary" type="button" value="Salvar" autofocus>
+                    <input class="btn btn-primary" type="submit" value="Listar">
                 </div>
             </div>
         </div>
@@ -41,11 +43,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
-            $('input[type="button"]').click(
+
+         $('input[type="button"]').click(
                 function () {
                     var nome = $('input[name="nome"]').val();
-                    //alert("Olá " + nome + ", seja bem vindo(a)");
+                    alert("Dados da " + nome + " salvos com sucesso.");
                 
+                });
+           $('input[type="submit"]').click(
+                function () {
+                   var nome =  $('input[name="nome"]').val();
+                   var idade =  $('input[name="idade"]').val();
+                   var raca =  $('input[name="raca"]').val();
+                   var coloracao =  $('input[name="coloracao"]').val();
+                   alert(" Nome: " + nome +
+                       ", Idade: " + idade +
+                       " anos, Raça: " + raca +
+                       ", Coloração: " + coloracao +
+
+
+                       ".");
+
+
                 });
     </script>
 </body>
