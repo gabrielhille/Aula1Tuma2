@@ -9,12 +9,11 @@
     <div class=" container-fluid">
         <div class=" row justify-content-md-center">
             <div class="col-3 time-now">
-                
-                </div>>   
+                </div>   
             
             <div class="col-3 time-now">
                 <span name=""></span>
-                
+               
                 <br>
                 <br>
                 <br>
@@ -25,16 +24,22 @@
                 
                  
                 <div class="col-md-12 ">
-                    <input type="text" class="w-100 form-control" name="nome" placeholder="Nome "><br>
+
+
+                    <input type="text" class="w-100 form-control" name="nome" placeholder="Nome " autofocus><br>
                     <input type="text" class="w-100 form-control" name="idade" placeholder="Idade"><br>
                     <input type="text" class="w-100 form-control" name="raca" placeholder="Raça"><br>
                     <input type="text" class="w-100 form-control" name="coloracao" placeholder="Coloração"><br>
 
-                </div>
-                <br>
-                <div class=" col-md-12">
-                    <input class="btn btn-primary" type="button" value="Salvar" autofocus>
-                    <input class="btn btn-primary" type="submit" value="Listar">
+
+                    <br>
+                    <div class="col-md-12">
+                        <input class="btn btn-primary" type="button" value="Salvar">
+                        <input class="btn btn-primary" type="submit" value="Listar">
+                        
+
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -42,30 +47,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-
-         $('input[type="button"]').click(
-                function () {
-                    var nome = $('input[name="nome"]').val();
-                    alert("Dados da " + nome + " salvos com sucesso.");
-                
-                });
-           $('input[type="submit"]').click(
-                function () {
-                   var nome =  $('input[name="nome"]').val();
-                   var idade =  $('input[name="idade"]').val();
-                   var raca =  $('input[name="raca"]').val();
-                   var coloracao =  $('input[name="coloracao"]').val();
-                   alert(" Nome: " + nome +
-                       ", Idade: " + idade +
-                       " anos, Raça: " + raca +
-                       ", Coloração: " + coloracao +
-
-
-                       ".");
-
-
-                });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
