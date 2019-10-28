@@ -15,17 +15,17 @@ namespace IMC.Controllers
 
             if (resultado <= 21)
             {
-                return $"Olá {nome} , você esta usando crack";
+                return $"Olá {nome} , você esta usando crack seu IMC é {resultado.ToString("N2")}";
 
             }
             if (resultado>=25)
             {
-                return $"Olá {nome} , você esta acima do peso seu IMC é {resultado}";
+                return $"Olá {nome} , você esta acima do peso seu IMC é {resultado.ToString("N2")}";
 
             }
             else
             {
-                return $"Olá {nome} você esta no peso ideal seu IMC é {resultado}";
+                return $"Olá {nome} você esta no peso ideal seu IMC é {resultado.ToString("N2")}";
             }
         }
         
