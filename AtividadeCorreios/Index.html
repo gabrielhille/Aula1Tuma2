@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Correios</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="style/style.css" rel="stylesheet" />
+
+</head>
+<body class="body-custom">
+   
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container-fluid h-100">
+        <div class=" row justify-content-md-center">
+
+            <span style="width:130px; ">Codigo:</span>
+            <span><input type="text" name="codigo" placeholder="Codigo " autofocus></span>
+        </div>
+
+        <div class=" row justify-content-md-center">
+            <span style="width:130px;">Senha:</span> 
+            <span><input type="password" name="senha" placeholder="******" value=""></span>
+        </div>
+        <div class=" row justify-content-md-center">
+            <span style="width:130px;">Serviços:</span>
+            <span >               
+                <select name="servicos" size="1" style="width:180px; ">
+                    <option value="04014">Sedex a vista</option>
+                    <option value="04510">PAC a vista</option>
+                    <option value="04782">Sedex 12 a vista</option>
+                    <option value="04790">Sedex 10 a vista</option>
+                    <option value="04804">Sedex 10 a vista</option>                   
+                </select>
+            </span>            
+        </div>
+
+        <div class=" row justify-content-md-center">
+            <span style="width:130px;">Cep:</span>
+            <span><input type="text" name="cepori" placeholder="Origem" value=""></span>
+        </div>
+
+        <div class=" row justify-content-md-center">
+            <span style="width:130px;">Cep:</span>
+            <span><input type="text" name="cepdes" placeholder="Destino" value=""></span>
+        </div>
+
+        <div class=" row justify-content-md-center">
+            <span style="width:130px;">Peso:</span>
+            <span><input type="text" name="peso" placeholder="Peso em Kg" value=""></span>
+        </div>
+
+        <div class=" row justify-content-md-center">
+            <span style="width:130px;">Formato:</span>
+            <span>
+                <select name="formato" size="1" style="width:180px;">
+                    <option value="1">Caixa/pacote</option>
+                    <option value="2">Rolo/prisma</option>
+                </select>
+            </span>
+        </div>
+
+        <div class=" row justify-content-md-center">
+            <span style="width:130px;">Comprimento:</span>
+            <span><input type="text" name="comprimento" placeholder="Centimetros" value=""></span>
+        </div>
+
+        <div class=" row justify-content-md-center">
+            <span style="width:130px;">Altura:</span>
+            <span><input type="text" name="altura" placeholder="Centimetros" value=""></span>
+        </div>
+
+        <div class=" row justify-content-md-center">
+            <span style="width:130px;">Largura:</span>
+            <span><input type="text" name="largura" placeholder="Centimetros" value=""></span>
+        </div>
+
+        <div class=" row justify-content-md-center">
+            <span style="width:130px;">Diâmetro:</span>
+            <span><input type="text" name="diametro" placeholder="Centimetros" value=""></span>
+        </div>
+
+        <div class=" row justify-content-md-center">
+            <span style="width:130px;">Mão própria:</span>
+            <span>
+                <select name="maopropria" size="1" style="width:180px;">
+                    <option value="S">Sim</option>
+                    <option value="N">Não</option>
+                </select>
+            </span>
+        </div>
+
+        <div class=" row justify-content-md-center">
+            <span style="width:130px;">Valor declarado:</span>
+            <span><input type="text" name="valordeclarado" placeholder="Valor do produto R$" value=""></span>
+        </div>
+
+        <div class=" row justify-content-md-center">
+            <span style="width:130px;">Aviso de Recebimento:</span>
+            <span>
+                <select name="avisorecebimento" size="1" style="width:180px;">
+                    <option value="S">Sim</option>
+                    <option value="N">Não</option>
+                </select>
+            </span>
+        </div>
+
+
+        <div class=" row justify-content-md-center">
+            <span><input type="button" class="w-100"name="BTN" value="Consultar" ID="Submit1"></span>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="Scripts/inputmask/min/inputmask.min.js"></script>
+    <script src="Scripts/Utils/Script.js"></script>
+
+</body>
+</html>
+ 
