@@ -33,11 +33,12 @@
                 Cep = "89107000",
                 Complemento = "Casa",
                 Municipio = "Pomerode",
-                Numero = 36
+                Numero = "36"
 
 
             }) ;
-            context.SaveChanges();
+            
+              context.SaveChanges();
         }
     }
 }
